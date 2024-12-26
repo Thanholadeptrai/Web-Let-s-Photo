@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'SVN-Beast';
+    src: url('../../font/SVN-Beast.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    position: fixed;
+    z-index: 999;
+    background-color: #FFEAC4;
+    width: 100vw;
+}
+
+.navbar-toggler {
+    position: fixed;
+    right: 16px;
+}
+
+.tinhnang {
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+}
+
+.tinhnang .container{
+    position: relative;
+}
+
+.tinhnang .container .navbar{
+    position: relative;
+    width: 100%;
+}
+.tinhnang .container .navbar .navbar-nav{
+    position: absolute;
+    right: 0;
+    top: 18px;
+}
+
+@media (max-width:992px) {
+    .tinhnang .container .navbar .navbar-nav{
+        position: fixed;
+        right: 80px;
+    }
+}
+
+.navbar .navbar-brand {
+    color: #96A856;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'SVN-Beast';
+}
+
+.navbar .navbar-brand span{
+    color: black;
+}
+
+.fix {
+    position: absolute;
+    right: 0;
+}
+
+.nav-item .btn {
+    background: linear-gradient(to right, #6B8E40 , #A5BC73);
+    color: white
+}
+
+.nav-item .form-select {
+    display: flex;
+    align-items: end;
+    background-color: #FFEAC4;
+    border: none;
+    width: 60px;
+    padding-left: 12px;
+    padding-right: 0px;
+}
+
+.custom-font-size {
+    font-size: 18px;
+}
