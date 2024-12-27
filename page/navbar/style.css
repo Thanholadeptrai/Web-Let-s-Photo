@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'SVN-Beast';
+    src: url('../../font/SVN-Beast.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    position: fixed;
+    z-index: 999;
+    background-color: #FFEAC4;
+    width: 100%;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 10%;
+    transition: all .30s ease;
+}
+
+.logo{
+    color: #96A856;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'SVN-Beast';
+}
+
+.logo span{
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'SVN-Beast';
+}
+
+.language{
+    border: none;
+    background-color: transparent;
+    text-align-last: right;
+}
+.signinbtn {
+    background: linear-gradient(to right, #6B8E40 , #A5BC73);
+    color: white;
+    border: none;
+    width: 218px;
+    height: 42px;
+    border-radius: 10px;
+}
+
+.navlist{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.fix{
+    display: flex;
+}
