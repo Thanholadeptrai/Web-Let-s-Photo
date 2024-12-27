@@ -138,7 +138,7 @@ class HeaderComponent extends HTMLElement {
                 #scroll-up {
                     position: fixed;
                     right: 30px;
-                    bottom: 30px;
+                    bottom: 80px;
                     text-align: center;
                     justify-content: center;
                     width: 40px;
