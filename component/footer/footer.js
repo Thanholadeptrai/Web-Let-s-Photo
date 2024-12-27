@@ -10,15 +10,15 @@ class FooterComponent extends HTMLElement {
                 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
                 *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: 'Poppins', sans-serif;
-                color: white;
-                font-size: 16px;
-                text-decoration: none;
-                scroll-behavior: smooth;
-                list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: 'Poppins', sans-serif;
+                    color: white;
+                    font-size: 16px;
+                    text-decoration: none;
+                    scroll-behavior: smooth;
+                    list-style: none;
                 }
 
                 footer{
@@ -76,6 +76,7 @@ class FooterComponent extends HTMLElement {
                     padding: 18px 8%;
                     justify-content: center;
                     align-items: center;
+                    text-align: center;
                 }
 
                 .logo{
@@ -104,7 +105,47 @@ class FooterComponent extends HTMLElement {
                         padding: 12px 2.5%;
                         transition: .1s;
                     }
+                    .logo {
+                        font-size: 50px;
+                    }
+                    .logo span {
+                        font-size: 50px;
+                    }
                 }
+
+                @media (max-width: 700px){
+                    .info{
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                    }
+                    .info .info1{
+                        padding-right: 0;
+                        padding-bottom: 10px;
+                    }
+                    .info2 h1, .info2 p, .info2 .icons{
+                        padding-left: 0;
+                    }
+                    .info1 p{
+                        padding-right: 10%;
+                    }
+                    .icons{
+                        justify-content: center;
+                    }
+                    .logo {
+                        font-size: 35px;
+                    }
+                    .logo span {
+                        font-size: 35px;
+                    }
+                    *{
+                        font-size: 14px;
+                    }
+                    h1{
+                        font-size: 20px;
+                    }
+                }
+                
             </style>
             <footer>
                 <div class="info">

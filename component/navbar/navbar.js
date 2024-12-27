@@ -200,6 +200,23 @@ class HeaderComponent extends HTMLElement {
                     .fix {
                         margin-left: auto;
                     }
+                    *{
+                        font-size: 16px;
+                    }
+                    .logo {
+                        font-size: 25px;
+                    }
+                    .logo span {
+                        font-size: 25px;
+                    }
+                    .signinbtn{
+                        font-size: 14px;
+                        width: 160px;
+                        height: 40px;
+                    }
+                    #menu-icon{
+                        margin-left: 10px;
+                    }
                 }
                 
             </style>
