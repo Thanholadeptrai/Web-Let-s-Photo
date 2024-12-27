@@ -3,46 +3,87 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 18px;
     text-decoration: none;
     scroll-behavior: smooth;
     list-style: none;
 }
-
-@font-face {
+@font-face{
     font-family: 'SVN-Beast';
     src: url('../../font/SVN-Beast.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-header {
+header{
     position: fixed;
-    z-index: 999;
-    background-color: #FFEAC4;
     width: 100%;
     top: 0;
     right: 0;
-    width: 100vw;
-    font-size: 18px;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 18px 10%;
+    padding: 18px 8%;
     transition: all .30s ease;
+    background: #FFEAC4;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px;
 }
-
 .logo{
-    color: #96A856;
-    font-size: 32px;
-    font-weight: 700;
+    color: #6B8E40;
     font-family: 'SVN-Beast';
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .logo span{
-    color: black;
-    font-size: 32px;
-    font-weight: 700;
     font-family: 'SVN-Beast';
+    font-family: 'SVN-Beast';
+    font-size: 40px;
+    font-weight: 700;
+    color: black
+}
+
+.navlist{
+    display: flex;
+    list-style: none;
+}
+
+.navlist a{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 25px;
+    transition: all .30s ease;
+}
+
+.navlist a::before{
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.navlist a:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navlist a:hover{
+    color: #6B8E40;
+}
+.navlist a::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: white;
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+.navlist a{
+    position: relative;
 }
 
 .language{
@@ -50,7 +91,8 @@ header {
     background-color: transparent;
     text-align-last: right;
 }
-.signinbtn {
+
+.signinbtn{
     background: linear-gradient(to right, #6B8E40 , #A5BC73);
     color: white;
     border: none;
@@ -59,13 +101,84 @@ header {
     border-radius: 10px;
 }
 
-.navlist{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-left: 20px;
+.signinbtn:hover{
+    box-shadow: rgba(0, 0, 0, 0.589) 0px 2px 4px;
+    transform: translateX(8px);
 }
 
-.fix{
+.fix {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#menu-icon{
+    font-size: 30px;
+    color: #6B8E40;
+    z-index: 1001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+
+#scroll-up{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: DECADA;
+    color:#6B8E40;
+    border-radius: 8px;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1480px){
+    header{
+        padding: 12px 2.5%;
+        transition: .1s;
+    }
+}
+
+@media (max-width: 1300px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        transition: all .45s ease;
+        background-color: #FFEAC4;
+        transform: translateX(-100%);
+    }
+    .navlist a{
+        display: block;
+        margin: 17px;
+        font-size: 18px;
+        transition: all .3s ease;
+        color: black;
+    }
+    .navlist a:hover{
+        color: #6B8E40;
+    }
+    .navlist.open{
+        transform: translateX(0);
+    }
+    .myproject .box2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .fix {
+        margin-left: auto;
+    }
 }
