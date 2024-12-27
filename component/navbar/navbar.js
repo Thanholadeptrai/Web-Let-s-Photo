@@ -46,15 +46,15 @@ class HeaderComponent extends HTMLElement {
                 .logo {
                     color: #6B8E40;
                     font-family: 'SVN-Beast';
-                    font-size: 40px;
-                    font-weight: 700;
+                    font-size: 35px;
+                    font-weight: 600;
                     letter-spacing: 1px;
                 }
 
                 .logo span {
                     font-family: 'SVN-Beast';
-                    font-size: 40px;
-                    font-weight: 700;
+                    font-size: 35px;
+                    font-weight: 600;
                     color: black;
                 }
 
