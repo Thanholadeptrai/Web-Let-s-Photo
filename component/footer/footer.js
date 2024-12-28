@@ -7,7 +7,6 @@ class FooterComponent extends HTMLElement {
                 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
                 @import url('https://unpkg.com/boxicons@latest/css/boxicons.min.css');
                 @import url('https://unicons.iconscout.com/release/v4.0.8/css/line.css');
-                @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
                 *{
                     margin: 0;
@@ -19,6 +18,27 @@ class FooterComponent extends HTMLElement {
                     text-decoration: none;
                     scroll-behavior: smooth;
                     list-style: none;
+                }
+                
+                @font-face{
+                    font-family: 'SVN-Beast';
+                    src: url('../../font/SVN-Beast.ttf') format('truetype');
+                    font-weight: normal;
+                    font-style: normal;
+                }
+
+                @font-face{
+                    font-family: 'SVN-Poppins-Regular';
+                    src: url('../../font/SVN-Poppins-Regular.otf') format('truetype');
+                    font-weight: normal;
+                    font-style: normal;
+                }
+
+                @font-face{
+                    font-family: 'SVN-Poppins-Italic';
+                    src: url('../../font/SVN-Poppins-Italic.otf') format('truetype');
+                    font-weight: normal;
+                    font-style: italic;
                 }
 
                 footer{

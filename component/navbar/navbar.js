@@ -7,13 +7,12 @@ class HeaderComponent extends HTMLElement {
                 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
                 @import url('https://unpkg.com/boxicons@latest/css/boxicons.min.css');
                 @import url('https://unicons.iconscout.com/release/v4.0.8/css/line.css');
-                @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
                 
                 * {
                     margin: 0;
                     padding: 0;
                     box-sizing: border-box;
-                    font-family: 'Poppins', sans-serif;
+                    font-family: 'SVN-Poppins-Regular';
                     color: black;
                     font-size: 18px;
                     text-decoration: none;
@@ -26,6 +25,20 @@ class HeaderComponent extends HTMLElement {
                     src: url('../../font/SVN-Beast.ttf') format('truetype');
                     font-weight: normal;
                     font-style: normal;
+                }
+
+                @font-face{
+                    font-family: 'SVN-Poppins-Regular';
+                    src: url('../../font/SVN-Poppins-Regular.otf') format('truetype');
+                    font-weight: normal;
+                    font-style: normal;
+                }
+
+                @font-face{
+                    font-family: 'SVN-Poppins-Italic';
+                    src: url('../../font/SVN-Poppins-Italic.otf') format('truetype');
+                    font-weight: normal;
+                    font-style: italic;
                 }
 
                 header {
@@ -105,16 +118,22 @@ class HeaderComponent extends HTMLElement {
                     text-align-last: right;
                 }
 
-                .signinbtn {
+                .signinbtn{
+                    display: flex;
                     background: linear-gradient(to right, #6B8E40, #A5BC73);
                     color: white;
-                    border: none;
                     width: 218px;
                     height: 42px;
                     border-radius: 10px;
+                    text-decoration: none;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'SVN-Poppins-Regular';
+                    transition: background-color 0.3s ease, transform 0.3s ease;
                 }
 
-                .signinbtn:hover {
+                .signinbtn:hover{
+                    background: linear-gradient(to right, #A5BC73 , #6B8E40);
                     box-shadow: rgba(0, 0, 0, 0.589) 0px 2px 4px;
                     transform: translateX(8px);
                 }
@@ -237,7 +256,7 @@ class HeaderComponent extends HTMLElement {
                     <div class="modeicon">
                         <i class="fa-solid fa-moon custom-icon switch" style="color: #000000;"></i>
                     </div>
-                    <button class="signinbtn">Đăng Nhập/Đăng Ký</button>
+                    <a href='#' class="signinbtn">Đăng Nhập/Đăng Ký</a>
                 </div>
                 <div class="bx bx-menu" id="menu-icon"></div>
                 <a href="#" id="scroll-up">
