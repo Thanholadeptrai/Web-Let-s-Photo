@@ -1,3 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SVN-Poppins-Light';
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+@font-face{
+    font-family: 'SVN-Beast';
+    src: url('../../font/SVN-Beast.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'SVN-Poppins-Regular';
+    src: url('../../font/SVN-Poppins-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'SVN-Poppins-Light';
+    src: url('../../font/SVN-Poppins-Light.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'SVN-Poppins-Mediumitalic';
+    src: url('../../font/SVN-Poppins-MediumItalic.otf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
 main{
-    height: 120vh;
+    padding: 0 8%;
+}
+
+.blank{
+    height: 105px;
+}
+
+.gioithieu{
+    position: relative;
+    display: flex;
+    margin-top: 20vh;
+}
+
+.anhminhhoa{
+    position: absolute;
+    z-index: 2;
+}
+
+.anhminhhoa img{
+    width: 35vw;
+    left: 0;
+}
+
+.contentgt{
+    position: relative;
+    z-index: 1;
+}
+
+.noidunggt{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFEAC4;
+    border-radius: 15px;
+    margin-left: 27vw;
+}
+
+.tieudegt{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40vw;
+}
+
+h1{
+    color: #96A856 !important;
+    font-family: 'SVN-Poppins-Mediumitalic';
+    font-size: 38px !important;
+    margin-bottom: 0 !important;
+}
+
+.tieudegt h2{
+    color: #96A856 !important;
+    font-family: 'SVN-Poppins-Mediumitalic';
+    font-size: 50px !important;
+    margin-top: 0 !important;
+}
+
+.noidunggt p, .noidunggt a{
+    margin-left: 13vw;
+}
+
+.noidunggt p{
+    padding-top: 35px;
+    padding-bottom: 10px;
+    margin-right: 8vw;
+}
+
+.noidunggt a {
+    display: flex;
+    margin-bottom: 40px;
+    background: linear-gradient(to right, #6B8E40, #A5BC73);
+    color: white;
+    width: 218px;
+    height: 42px;
+    border-radius: 10px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SVN-Poppins-Regular';
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.noidunggt a:hover{
+    background: linear-gradient(to right, #A5BC73 , #6B8E40);
+    box-shadow: rgba(0, 0, 0, 0.589) 0px 2px 4px;
+    transform: translateX(8px);
+}
+
+
+@media (max-width: 1480px){
+    .blank{
+        height: 95px;
+    }
+    main{
+        padding: 0 2.5%;
+    }
+}
+
+@media (max-width: 1300px){
+    .blank{
+        height: 80px;
+    }
+}
+
+@media (max-width: 1150px){
+    h1{
+        font-size: 30px !important;
+    }
+    
+    .tieudegt h2{
+        font-size: 40px !important;
+    }
+}
+
+@media (max-width: 720px){
+    *{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 20px !important;
+    }
+    
+    .tieudegt h2{
+        font-size: 27px !important;
+    }
+    .gioithieu{
+        flex-direction: column;
+    }
+    .anhminhhoa{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .anhminhhoa img{
+        width: 60vw;
+    }
+    .noidunggt{
+        margin-left: 2.5vw;
+        margin-left: 2.5vw;
+    }
+    .tieudegt{
+        margin-top: 3vh;
+        margin-left: 0;
+        text-align: center;
+    }
+    .noidunggt p, .noidunggt a{
+        margin-left: 7.5vw;
+    }
+    .noidunggt a {
+        margin-bottom: 30px;
+        width: 195px;
+        height: 40px;
+    }
 }
