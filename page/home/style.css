@@ -32,6 +32,13 @@
 }
 
 @font-face{
+    font-family: 'SVN-Poppins-Medium';
+    src: url('../../font/SVN-Poppins-Medium.otf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face{
     font-family: 'SVN-Poppins-Mediumitalic';
     src: url('../../font/SVN-Poppins-MediumItalic.otf') format('truetype');
     font-weight: normal;
@@ -73,6 +80,7 @@ main{
     background-color: #FFEAC4;
     border-radius: 15px;
     margin-left: 27vw;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px;
 }
 
 .tieudegt{
@@ -126,6 +134,147 @@ h1{
     transform: translateX(8px);
 }
 
+/* top nhiếp ảnh gia */
+.chuyenmuc1{
+    margin-top: 30vh;
+}
+
+.chuyenmuc1 .tieude{
+    text-align: center;
+}
+
+.chuyenmuc1 .box1{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    align-items: left;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 3rem; 
+    margin-top: 30px;
+}
+
+.chuyenmuc1 .box1 a{
+    text-decoration: none;
+}
+
+.profilenag{
+    display: flex;
+    align-items: center;
+    background-color: #FFEAC4;
+    padding: 10px;
+}
+
+.prinfo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.profile{
+    display: flex;
+}
+
+.profilenag img{
+    width: 20%
+}
+
+.profilenag h3{
+    font-family: 'SVN-Poppins-Medium';
+    font-size: 18px;
+}
+
+.profilenag h4{
+    font-family: 'SVN-Poppins-Light';
+    font-size: 14px;
+    color: #6B8E40;
+}
+
+.profilenag button{
+    font-family: 'SVN-Poppins-Light';
+    font-size: 14px;
+    border: 1px solid #96A856;
+    padding: 0 7px;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.profilenag .rate{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+.rate h5{
+    font-size: 14px !important;
+    margin: 0;
+}
+
+.rate i{
+    font-size: 18px;
+}
+
+/* bài viết mới nhất */
+
+.chuyenmuc2{
+    margin-top: 30vh;
+}
+
+.tieude{
+    text-align: center;
+}
+
+.chuyenmuc2 .box1{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    align-items: left;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 3rem; 
+    margin-top: 30px;
+}
+
+.chuyenmuc2 .box1 a{
+    text-decoration: none;
+}
+
+.chuyenmuc2 .item img{
+    display: grid;
+    height: auto;
+    width: 100%;
+}
+
+.chuyenmuc2 .info{
+    display: flex;
+    margin-top: 10%;
+}
+
+.chuyenmuc2 .text{
+    width: 90%;
+}
+
+.chuyenmuc2 h3{
+    font-family: 'SVN-Poppins-Medium';
+    font-size: 16px;
+    color: #96A856;
+    margin-bottom: 2px;
+}
+
+.chuyenmuc2 h4{
+    font-family: 'SVN-Poppins-Light';
+    font-size: 12px !important;
+    margin-top: 0;
+}
+
+.chuyenmuc2 .arrow{
+    display: flex;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+}
 
 @media (max-width: 1480px){
     .blank{
@@ -134,11 +283,20 @@ h1{
     main{
         padding: 0 2.5%;
     }
+    .chuyenmuc1, .chuyenmuc2{
+        margin-top: 20vh;
+    }
 }
 
 @media (max-width: 1300px){
     .blank{
         height: 80px;
+    }
+    .box1{
+        gap: 2rem;
+    }
+    .chuyenmuc1, .chuyenmuc2{
+        margin-top: 15vh;
     }
 }
 
@@ -149,6 +307,42 @@ h1{
     
     .tieudegt h2{
         font-size: 40px !important;
+    }
+    .profilenag h3{
+        font-size: 16px;
+    }
+    
+    .profilenag h4{
+        font-size: 12px;
+    }
+    .rate h5{
+        font-size: 12px !important;
+        margin: 0;
+    }
+    
+    .rate i{
+        font-size: 16px;
+    }
+    .profilenag button{
+        font-size: 12px;
+    }
+    .chuyenmuc1, .chuyenmuc2{
+        margin-top: 10vh;
+    }
+    .chuyenmuc1 .box1, .chuyenmuc2 .box1{
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 840px){
+
+    .chuyenmuc1 .box1{
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1rem;
+        margin-top: 20px;
+    }
+    .chuyenmuc2 h3{
+        font-size: 14px;
     }
 }
 
@@ -190,5 +384,24 @@ h1{
         margin-bottom: 30px;
         width: 195px;
         height: 40px;
+    }
+    .gioithieu{
+        margin-top: 10vh;
+    }
+}
+
+@media (max-width: 500px){
+    .chuyenmuc1 .box1{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    .chuyenmuc1 .box1 .item{
+        width: 60vw;
+    }
+    .chuyenmuc2 .box1{
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 2rem;
+        margin-top: 20px;
     }
 }
