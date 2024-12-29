@@ -145,7 +145,7 @@ h1{
 
 /* top nhiếp ảnh gia */
 .chuyenmuc1{
-    margin-top: 30vh;
+    margin-top: 25vh;
 }
 
 .chuyenmuc1 .tieude{
@@ -165,6 +165,13 @@ h1{
 
 .chuyenmuc1 .box1 a{
     text-decoration: none;
+}
+
+.chuyenmuc1 .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #FFEAC4;
 }
 
 .profilenag{

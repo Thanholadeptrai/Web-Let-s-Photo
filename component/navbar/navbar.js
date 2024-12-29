@@ -240,13 +240,13 @@ class HeaderComponent extends HTMLElement {
                 
             </style>
             <header>
-                <a href="#" class="logo">Let's<span>photo</span></a>
+                <a href = "../../page/home/index.html" class="logo">Let's<span>photo</span></a>
                 <ul class="navlist">
-                    <li><a href="#">Về Chúng Tôi</a></li>
-                    <li><a href="#">Nhiếp Ảnh Gia</a></li>
-                    <li><a href="#">Thể Loại</a></li>
-                    <li><a href="#">Đặt Lịch</a></li>
-                    <li><a href="#">Cộng Đồng</a></li>
+                    <li><a href="../../page/about us/about.html">Về Chúng Tôi</a></li>
+                    <li><a href="../../page/photographers/photographers.html">Nhiếp Ảnh Gia</a></li>
+                    <li><a href="../../page/shooting type/type.html">Thể Loại</a></li>
+                    <li><a href="../../page/book a photoshoot/book.html">Đặt Lịch</a></li>
+                    <li><a href="../../page/community/comunity.html">Cộng Đồng</a></li>
                 </ul>
                 <div class="fix">
                     <select id="language" name="language" class="language">
