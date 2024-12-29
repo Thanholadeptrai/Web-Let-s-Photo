@@ -24,7 +24,7 @@
         <div class="blank"></div>
         
         <!-- slide -->
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <section id="demo" class="carousel slide" data-bs-ride="carousel">
             <!-- Indicators/3 gạch dự đoán xu hướng ở dưới -->
             <div class="carousel-indicators">
             <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
@@ -50,10 +50,10 @@
             <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
             <span class="carousel-control-next-icon"></span>
             </button>
-        </div>
+        </section>
         
         <!-- giới thiệu -->
-        <div class="gioithieu">
+        <section class="gioithieu" id="gioithieu">
             <div class="anhminhhoa">
                 <img src="../../photo/Home/2khunganh.webp" alt="Chụp ảnh cùng Let's Photo" loading="lazy">
             </div>
@@ -71,10 +71,10 @@
                     <a href='#' class="xemthem">Xem thêm về Let's Photo</a>
                 </div>
             </div>
-        </div>
+        </section>
         
         <!-- top nhiếp ảnh gia -->
-        <div class="chuyenmuc1">
+        <section class="chuyenmuc1" id="topnag">
             <div class="tieude">
                 <h1>Top Nhiếp Ảnh Gia</h1>
             </div>
@@ -204,10 +204,10 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- bài viết mới nhất -->
-        <div class="chuyenmuc2">
+        <section class="chuyenmuc2" id="baiviet">
             <div class="tieude">
                 <h1>Bài Viết Mới Nhất</h1>
             </div>
@@ -255,7 +255,30 @@
                     </div>
                 </a>
             </div>
-        </div>
+            <div class="xemthem">
+                <a href='#' class="baivietkhac">Bài viết khác từ Cộng Đồng</a>
+            </div>
+        </section>
+
+        <!-- đăng ký nhận tin -->
+        <section class="chuyenmuc3" id="dknhantin">
+            <div class="tieude">
+                <h1>Đăng Ký Nhận Tin</h1>
+                <p>Cập nhật thông tin nhanh chóng từ Let's Photo</p>
+            </div>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Họ và tên">
+                    <input type="email" placeholder="Email">
+                </div>
+                <textarea rows="10" cols="50" placeholder="Lời nhắn cho chúng tôi"></textarea>
+                <div class="dangky">
+                    <input type="submit" value="Bấm để đăng ký" class="btn">
+                </div>
+            </form>
+        </section>
+        <!-- khoảng trống với footer-->
+        <div class="blank"></div>
     </main>
     <footer-component></footer-component>
 </body>

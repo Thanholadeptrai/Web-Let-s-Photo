@@ -25,6 +25,13 @@
 }
 
 @font-face{
+    font-family: 'SVN-Poppins-Italic';
+    src: url('../../font/SVN-Poppins-Italic.otf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face{
     font-family: 'SVN-Poppins-Light';
     src: url('../../font/SVN-Poppins-Light.otf') format('truetype');
     font-weight: normal;
@@ -35,7 +42,7 @@
     font-family: 'SVN-Poppins-Medium';
     src: url('../../font/SVN-Poppins-Medium.otf') format('truetype');
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
 @font-face{
@@ -52,6 +59,8 @@ main{
 .blank{
     height: 105px;
 }
+
+/* giới thiệu */
 
 .gioithieu{
     position: relative;
@@ -219,10 +228,10 @@ h1{
 /* bài viết mới nhất */
 
 .chuyenmuc2{
-    margin-top: 30vh;
+    margin-top: 20vh;
 }
 
-.tieude{
+.chuyenmuc2 .tieude{
     text-align: center;
 }
 
@@ -276,6 +285,102 @@ h1{
     margin-right: 5px;
 }
 
+.chuyenmuc2 .xemthem{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.chuyenmuc2 .xemthem a{
+    display: flex;
+    background: linear-gradient(to right, #6B8E40, #A5BC73);
+    color: white;
+    width: 250px;
+    height: 42px;
+    border-radius: 10px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SVN-Poppins-Regular';
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.chuyenmuc2 .xemthem a:hover{
+    background: linear-gradient(to right, #A5BC73 , #6B8E40);
+    box-shadow: rgba(0, 0, 0, 0.589) 0px 2px 4px;
+    transform: translateX(8px);
+}
+
+/* đăng ký nhận tin */
+.chuyenmuc3{
+    margin-top: 20vh;
+}
+
+.chuyenmuc3 .tieude{
+    text-align: center;
+}
+
+.chuyenmuc3 .tieude p{
+    font-family: 'SVN-Poppins-Italic';
+    margin-top: 5px;
+}
+
+.chuyenmuc3 form{
+    max-width: 70 rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.chuyenmuc3 form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* các item sẽ bọc trọn trong container */
+}
+
+.chuyenmuc3 form .input-box input,
+.chuyenmuc3 form textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #FFEAC4;
+    border-radius: 10px;
+    color: white;
+    margin: .5rem 0;
+    border-style:groove;
+    border-color: #96A856;
+    border-width: 1px;
+}
+
+.chuyenmuc3 form .input-box input{
+    width: 49%;
+}
+
+.chuyenmuc3 form .dangky{
+    display: flex;
+    justify-content: center;
+}
+
+.chuyenmuc3 form .btn{
+    display: flex;
+    background: linear-gradient(to right, #6B8E40, #A5BC73);
+    color: white;
+    width: 200px;
+    height: 42px;
+    border-radius: 10px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SVN-Poppins-Regular';
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.chuyenmuc3 form .btn:hover{
+    background: linear-gradient(to right, #A5BC73 , #6B8E40);
+    box-shadow: rgba(0, 0, 0, 0.589) 0px 2px 4px;
+    transform: translateX(8px);
+}
+
 @media (max-width: 1480px){
     .blank{
         height: 95px;
@@ -283,7 +388,7 @@ h1{
     main{
         padding: 0 2.5%;
     }
-    .chuyenmuc1, .chuyenmuc2{
+    .chuyenmuc1{
         margin-top: 20vh;
     }
 }
@@ -295,7 +400,7 @@ h1{
     .box1{
         gap: 2rem;
     }
-    .chuyenmuc1, .chuyenmuc2{
+    .chuyenmuc1, .chuyenmuc2, .chuyenmuc3{
         margin-top: 15vh;
     }
 }
@@ -326,7 +431,7 @@ h1{
     .profilenag button{
         font-size: 12px;
     }
-    .chuyenmuc1, .chuyenmuc2{
+    .chuyenmuc1, .chuyenmuc2, .chuyenmuc3{
         margin-top: 10vh;
     }
     .chuyenmuc1 .box1, .chuyenmuc2 .box1{
@@ -387,6 +492,14 @@ h1{
     }
     .gioithieu{
         margin-top: 10vh;
+    }
+    .chuyenmuc2 .xemthem a{
+        width: 218px;
+        height: 40px;
+    }
+    .chuyenmuc3 form .btn{
+        width: 180px;
+        height: 40px;
     }
 }
 
