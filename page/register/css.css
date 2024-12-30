@@ -90,7 +90,7 @@ h1{
 h2{
     font-size: 16px;
     margin-top: 16px;
-    font-family: 'SVN-Poppins-Regular';
+    font-family: 'SVN-Poppins-Light';
 }
 .wrapper a:hover{
     text-decoration: none;
@@ -125,9 +125,8 @@ button:hover{
     text-align: center;
     margin-top: 25px;
     color: #000000;
+    
 }
-
-
 a{
     color: #000000;
     text-decoration: none;
