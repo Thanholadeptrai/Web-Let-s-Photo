@@ -74,3 +74,130 @@ main{
         height: 80px;
     }
 }
+
+main{
+    margin-top: 10vh;
+}
+
+.tieude{
+    text-align: center;
+}
+
+h1{
+    color: #96A856 !important;
+    font-family: 'SVN-Poppins-Mediumitalic';
+    font-size: 38px !important;
+    margin-bottom: 0 !important;
+}
+
+.box1{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    align-items: left;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 3rem; 
+    margin-top: 30px;
+}
+
+.box1 a{
+    text-decoration: none;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #FFEAC4;
+}
+
+.profilenag{
+    display: flex;
+    align-items: center;
+    background-color: #FFEAC4;
+    padding: 10px;
+}
+
+.prinfo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.profile{
+    display: flex;
+}
+
+.profilenag img{
+    width: 20%
+}
+
+.profilenag h3{
+    font-family: 'SVN-Poppins-Medium';
+    font-size: 18px;
+}
+
+.profilenag h4{
+    font-family: 'SVN-Poppins-Light';
+    font-size: 14px;
+    color: #6B8E40;
+}
+
+.profilenag button{
+    font-family: 'SVN-Poppins-Light';
+    font-size: 14px;
+    border: 1px solid #96A856;
+    padding: 0 7px;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.profilenag .rate{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+.rate h5{
+    font-size: 14px !important;
+    margin: 0;
+}
+
+.rate i{
+    font-size: 18px;
+}
+
+@media (max-width: 1150px){
+    h1{
+        font-size: 30px !important;
+    }
+    main{
+        margin-top: 5vh;
+    }
+    .box1{
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 840px){
+
+    .box1{
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1rem;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .box1{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    .box1 .item{
+        width: 60vw;
+    }
+}

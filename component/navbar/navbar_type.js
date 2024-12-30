@@ -1,4 +1,4 @@
-class HeaderComponent extends HTMLElement {
+class HeaderComponentType extends HTMLElement {
     constructor() {
         super();
         const shadow = this.attachShadow({ mode: 'open' });
@@ -108,7 +108,12 @@ class HeaderComponent extends HTMLElement {
                     z-index: -1;
                     transition: transform .3s ease;
                 }
-
+                
+                #type {
+                    background: white;
+                    color: #6B8E40;
+                }
+                
                 .language {
                     border: none;
                     background-color: transparent;
@@ -264,4 +269,4 @@ class HeaderComponent extends HTMLElement {
     }
 }
 
-customElements.define('header-component', HeaderComponent);
+customElements.define('header-component-type', HeaderComponentType);
