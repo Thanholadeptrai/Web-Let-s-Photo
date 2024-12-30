@@ -1,27 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book a photoshoot</title>
     <!-- main css -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
     <!-- Import component -->
     <script src="../../component/navbar/navbar_book.js" defer></script>
     <script src="../../component/navbar/main.js" defer></script>
     <script src="../../component/footer/footer.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header-component-book></header-component-book>
     <!-- khoảng trống để tránh bị navbar che -->
     <div class="blank"></div>
     <main>
+      <div class="booking-container">
+        <div class="booking-header">
+          <h1>Đặt Lịch Chụp Ảnh</h1>
+          <p>Hãy cùng nhau tạo nên những kỷ niệm đẹp</p>
+        </div>
+        <form id="bookingForm">
+          <div class="form-sections-wrapper">
+            <div class="form-section">
+              <div class="section-header">
+                <i class="uil uil-user"></i>
+                <h2>Thông Tin Cá Nhân</h2>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <label for="name">Họ và Tên</label>
+                  <input type="text" id="name" required />
+                </div>
+                <div class="input-group">
+                  <label for="email">Địa Chỉ Email</label>
+                  <input type="email" id="email" required />
+                </div>
+                <div class="input-group">
+                  <label for="phone">Số Điện Thoại</label>
+                  <input type="tel" id="phone" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <div class="section-header">
+                <i class="uil uil-camera"></i>
+                <h2>Chi Tiết Buổi Chụp</h2>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <label for="shootDate">Ngày Chụp</label>
+                  <input type="date" id="shootDate" required />
+                </div>
+                <div class="input-group">
+                  <label for="shootType">Loại Hình Chụp</label>
+                  <select id="shootType" required>
+                    <option value="">Chọn loại hình chụp</option>
+                    <option value="portrait">Chân Dung</option>
+                    <option value="wedding">Cưới</option>
+                    <option value="event">Sự Kiện</option>
+                    <option value="family">Gia Đình</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <label for="notes">Yêu Cầu Đặc Biệt</label>
+                  <textarea
+                    id="notes"
+                    placeholder="Chia sẻ ý tưởng của bạn..."
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="form-section photographer-section">
+              <div class="section-header">
+                <i class="uil uil-user-circle"></i>
+                <h2>Chọn Nhiếp Ảnh Gia</h2>
+              </div>
+              <div class="photographer-options">
+                <label class="photographer-card">
+                  <input type="radio" name="photographer" value="nguyen-van-a" required/>
+                  <div class="photographer-content">
+                    <img src="../../assets/photographer1.jpg" alt="Nguyễn Văn A">
+                    <div class="photographer-info">
+                      <h3>Nguyễn Văn A</h3>
+                      <p class="specialty">Chuyên môn: Chân dung, Thời trang</p>
+                      <p class="experience">5 năm kinh nghiệm</p>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="photographer-card">
+                  <input type="radio" name="photographer" value="tran-thi-b"/>
+                  <div class="photographer-content">
+                    <img src="../../assets/photographer2.jpg" alt="Trần Thị B">
+                    <div class="photographer-info">
+                      <h3>Trần Thị B</h3>
+                      <p class="specialty">Chuyên môn: Cưới, Gia đình</p>
+                      <p class="experience">7 năm kinh nghiệm</p>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="photographer-card">
+                  <input type="radio" name="photographer" value="le-van-c"/>
+                  <div class="photographer-content">
+                    <img src="../../assets/photographer3.jpg" alt="Lê Văn C">
+                    <div class="photographer-info">
+                      <h3>Lê Văn C</h3>
+                      <p class="specialty">Chuyên môn: Sự kiện, Phong cảnh</p>
+                      <p class="experience">3 năm kinh nghiệm</p>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div> -->
+
+            <div class="form-section packages-section">
+              <div class="section-header">
+                <i class="uil uil-box"></i>
+                <h2>Chọn Gói Dịch Vụ</h2>
+              </div>
+              <div class="package-options">
+                <label class="package-card">
+                  <input type="radio" name="package" value="basic" />
+                  <div class="package-content">
+                    <div class="package-header">
+                      <h3>Cơ Bản</h3>
+                      <span class="price">4.990.000đ</span>
+                    </div>
+                    <ul>
+                      <li><i class="uil uil-check"></i>Chụp 1 Giờ</li>
+                      <li><i class="uil uil-check"></i>20 Ảnh Đã Chỉnh Sửa</li>
+                      <li><i class="uil uil-check"></i>Chỉnh Sửa Cơ Bản</li>
+                      <li><i class="uil uil-check"></i>Thư Viện Ảnh Online</li>
+                    </ul>
+                  </div>
+                </label>
+
+                <label class="package-card featured">
+                  <input type="radio" name="package" value="premium" />
+                  <div class="package-content">
+                    <div class="package-header">
+                      <h3>Cao Cấp</h3>
+                      <span class="price">9.990.000đ</span>
+                      <span class="featured-tag">Phổ Biến</span>
+                    </div>
+                    <ul>
+                      <li><i class="uil uil-check"></i>Chụp 2 Giờ</li>
+                      <li><i class="uil uil-check"></i>50 Ảnh Đã Chỉnh Sửa</li>
+                      <li><i class="uil uil-check"></i>Chỉnh Sửa Nâng Cao</li>
+                      <li><i class="uil uil-check"></i>Thư Viện Ảnh Online</li>
+                      <li><i class="uil uil-check"></i>Bản Quyền In Ấn</li>
+                    </ul>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <span>Đặt Lịch Ngay</span>
+            <i class="uil uil-arrow-right"></i>
+          </button>
+        </form>
+      </div>
     </main>
     <!-- khoảng trống để tránh bị navbar che -->
     <div class="blank"></div>
     <footer-component></footer-component>
-</body>
+  </body>
 </html>
