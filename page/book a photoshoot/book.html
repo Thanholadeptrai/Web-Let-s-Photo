@@ -19,6 +19,143 @@
     <!-- khoảng trống để tránh bị navbar che -->
     <div class="blank"></div>
     <main>
+        <div class="welcome"><h1>Đặt lịch chụp hình với</h1>
+            <img src="Asset 1.png" alt="">
+        </div>
+        <div class="choose">
+            <div class="choose1">
+                <p>Nhiếp ảnh gia tự chọn</p>
+            </div>
+            <div class="choose2">
+                <p>Nhiếp ảnh gia do Let's Photo chọn</p>
+            </div>
+        </div>
+        <p class="line1">Bạn có thể thoải mái lựa chọn Nhiếp ảnh gia yêu thích trong số các Nhiếp ảnh gia đề nghị chụp cho buổi chụp của bạn.</p>
+        <h2>Chọn thể loại <b>*</b></h2>
+        <p class="line2">Thông tin thể loại chụp, xem tại <a href="">đây</a></p>
+        <div class="theloai">
+            <label>
+              <input type="radio" name="theloai" value="1">
+              <span>Cá nhân</span>
+            </label>
+            <label>
+              <input type="radio" name="theloai" value="2">
+              <span>Cặp đôi</span>
+            </label>
+            <label>
+              <input type="radio" name="theloai" value="3">
+              <span>Gia đình</span>
+            </label>
+            <label>
+              <input type="radio" name="theloai" value="4">
+              <span>Nhóm</span>
+            </label>
+            <label>
+              <input type="radio" name="theloai" value="5">
+              <span>Học sinh</br>sinh viên</span>
+            </label>
+            <label>
+                <input type="radio" name="theloai" value="6">
+                <span>Sự kiện</span>
+              </label>
+          </div>
+          <h2>Chọn bối cảnh <b>*</b></h2>
+          <div class="boicanh">
+            <label>
+              <input type="radio" name="boicanh" value="1">
+              <span class="anh1">Ngoài trời</span>
+            </label>
+            <label>
+              <input type="radio" name="boicanh" value="2">
+              <span class="anh2">Studio</span>
+            </label>
+            <label>
+              <input type="radio" name="boicanh" value="3">
+              <span class="anh3">Cần tư vấn</span>
+            </label>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+                <h2 for="name">Chọn địa điểm <b>*</b></h2>
+                <input type="text" id="1" name="1">
+            </div>
+            
+            <div class="form-group">
+                <h2 for="dob">Địa điểm cụ thể (nếu có)</h2>
+                <input type="text" id="2" name="2">
+            </div>
+        </div>
+            <h2>Ngày chụp hình dự kiến <b>*</b></h2>
+            <p>Thời hạn để Nhiếp ảnh gia Đề nghị chụp là 48 tiếng trước giờ chụp. Bạn hãy lựa chọn Nhiếp ảnh gia phù hợp trước thời điểm này nhé!</p>
+        <div class="time">
+                <div class="time1">
+                    <h2 for="name">Ngày <b>*</b></h2>
+                    <input type="text" id="1" name="1">
+                </div>
+                
+                <div class="time1">
+                    <h2 for="dob">Tháng <b>*</b></h2>
+                    <input type="text" id="2" name="2">
+                </div>
+                <div class="time1">
+                    <h2 for="name">Năm <b>*</b></h2>
+                    <input type="text" id="3" name="3">
+                </div>
+        </div>
+        <h2>Chi tiết buổi chụp <b>*</b></h2>
+        <div class="wrapper">
+            <form class="form">
+            <div class="form1">
+                <h2 class="text">Tiêu đề buổi chụp <b>*</b></h2>
+                <input type="text" id="link" name="link">
+            </div>
+            <div class="form2">
+                <h2 class="text">Nội dung buổi chụp <b>*</b></h2>
+                <textarea class="input" ></textarea>
+            </div>
+            <h2 class="text">Dịch vụ đi kèm</h2>
+            <p>Thời hạn để Nhiếp ảnh gia Đề nghị chụp là 48 tiếng trước giờ chụp. Bạn hãy lựa chọn Nhiếp ảnh gia phù hợp trước thời điểm này nhé!</p>
+            <div class="choosedv">
+                <label class="remember">Make up + Làm tóc
+                    <input type="checkbox">
+                
+                    <span class="check"></span>
+                </label>
+            </div>
+            <div class="choosedv">
+                
+                <label class="remember">Trang phục chụp ảnh
+                    <input type="checkbox">
+                
+                    <span class="check"></span>
+                </label>
+                
+            </div>
+            <div class="choosedv">
+                
+                <label class="remember">Thuê studio
+                    <input type="checkbox">
+                
+                    <span class="check"></span>
+                </label>
+            </div>
+        </div>
+        <h2>Chi phí mong muốn của buổi chụp <b>*</b></h2>
+        <p>Chi phí mà bạn cảm thấy phù hợp để chi trả cho buổi chụp. Bao gồm chi phí cho Dịch vụ đi kèm (nếu có)</p>
+        <div class="money">
+            <div class="money1">
+                <h2 for="name">Từ (VND) <b>*</b></h2>
+                <input type="text" id="1" name="1">
+            </div>
+            
+            <div class="money1">
+                <h2 for="dob">Đến (VND)</h2>
+                <input type="text" id="2" name="2">
+            </div>
+        </div>
+        <div class="button">
+            <button type="submit">Xác nhận yêu cầu</button>
+        </div>
     </main>
     <!-- khoảng trống để tránh bị navbar che -->
     <div class="blank"></div>

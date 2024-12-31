@@ -74,3 +74,388 @@ main{
         height: 80px;
     }
 }
+*{
+    font-family: 'SVN-Poppins-Regular';
+}
+.welcome {
+    margin-top: 40px;
+    display: flex;
+}
+h1 {
+    
+    font-size: 50px;
+}
+.welcome img{
+    margin-left: 20px;
+    width: 300px;
+    height: auto;
+}
+.choose{
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+  }
+.choose1 {
+    width: 250px;
+    border-radius: 45px;
+    padding: 5px;
+    text-align: center;
+    background-color: #68982D;
+    color: #fff;
+}
+.choose1 p {
+    color: #fff;
+    font-size: 16px;
+}
+.choose2 {
+    width: 370px;
+    border-radius: 45px;
+    padding: 5px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #68982D;
+}
+.choose2 p{
+    color: #68982D;
+}
+.line1 {
+    margin-top: 16px;
+    font-size: 16px;
+}
+b {
+    color: red;
+}
+h2{
+    margin-top: 40px;
+}
+.line2{
+    font-size: 16px;
+}
+a{
+    text-decoration: underline;
+    color: #C78C1E;
+}
+.theloai {
+    width: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .theloai label {
+    display: flex;
+    
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .theloai input[type="radio"] {
+    display: none;
+    background-color: #96A856;
+  }
+  
+  .theloai span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 100px;
+    padding: 10px 20px;
+    background-color: #96A856;
+    border-radius: 10px;
+    transition: all 0.3s;
+  }
+  
+  .theloai input[type="radio"]:checked + span {
+    background-color: #FFE2AE;
+    color: black;
+    border: 2px solid #68982D;
+  }
+  
+  .theloai span:hover {
+    background-color: #96A856;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .boicanh {
+    width: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .boicanh label {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-end;
+  }
+  
+  .boicanh input[type="radio"] {
+    display: none;
+    
+  }
+  
+  .boicanh span {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 200px;
+    height: 150px;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s;
+  }
+  
+  .boicanh input[type="radio"]:checked + span {
+    border: 8px solid #68982D;
+  }
+  
+  .boicanh span:hover {
+    background-color: #96A856;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .anh1 {
+    background: url('anh1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .anh2 {
+    background: url('anh2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .anh3 {
+    background: url('anh3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .form-row input {
+    margin-top: 10px;
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffe4b3;
+}
+.form-row {
+    
+    display: flex;
+    
+    
+    gap: 50px;
+}
+.form-group input:focus {
+    outline: none;
+    border: 2px solid #6B8E40;
+}
+.form-row :last-child {
+    margin-right: 0;
+}
+.time input {
+    margin-top: 10px;
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffe4b3;
+}
+.time {
+    
+    display: flex;
+    
+    
+    gap: 30px;
+}
+.time1 input:focus {
+    outline: none;
+    border: 2px solid #6B8E40;
+}
+.time :last-child {
+    margin-right: 0;
+}
+.money input {
+    margin-top: 10px;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffe4b3;
+}
+.money {
+    
+    display: flex;
+    
+    
+    gap: 30px;
+}
+.money1 input:focus {
+    outline: none;
+    border: 2px solid #6B8E40;
+}
+.money :last-child {
+    margin-right: 0;
+}
+.wrapper {
+    width: 700px;
+    border-radius: 45px;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    backdrop-filter: blur(8px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.37);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper:hover {
+box-shadow: 12px 12px 48px rgba(0, 0, 0, 0.5);
+}
+form {
+    max-width:700px;
+    display: flex;
+    flex-direction: column;
+}
+.form1 {
+    margin-bottom: 15px;
+}
+.form1 label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #000;
+}
+.form1 input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffe4b3;
+}
+.form1 input:focus {
+    outline: none;
+    border: 2px solid #6B8E40;
+}
+.form2 {
+    margin-bottom: 15px;
+}
+.form2 label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #000;
+}
+.input {
+    width: 100%;
+    height: 180px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffe4b3;
+    
+
+
+font-size: 16px;
+line-height: 1.5;
+overflow-y: auto;
+word-wrap: break-word;
+resize: none;
+vertical-align: top;
+}
+.input:focus {
+    outline: none;
+    border: 2px solid #6B8E40;
+}
+.remember input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.choosedv {
+    
+    justify-content: space-between;
+    margin: 10px 0 20px 10px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+}
+.check {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #68982D;
+    background-color: #ccc;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+.remember input:checked ~.check{
+    background-color: #68982D;
+}
+.check:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .remember input:checked ~ .check:after {
+    display: block;
+  }
+  
+  .remember .check:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+button {
+    width: 200px;
+    background: linear-gradient(90deg,#6B8E40,#A5BC73);
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin: 10px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+button:hover{
+    color: #ffffff;
+    background: linear-gradient(90deg,#829D62,#C5CEB0);
+    border-color: #ffffff;
+}
+
+.button{
+    color: #68982D;
+    font-family: 'SVN-Poppins-Light';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
