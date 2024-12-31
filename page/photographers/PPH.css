@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SVN-Poppins-Light';
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+@font-face{
+    font-family: 'SVN-Beast';
+    src: url('../../font/SVN-Beast.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'SVN-Poppins-Regular';
+    src: url('../../font/SVN-Poppins-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'SVN-Poppins-Italic';
+    src: url('../../font/SVN-Poppins-Italic.otf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'SVN-Poppins-Light';
+    src: url('../../font/SVN-Poppins-Light.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'SVN-Poppins-Medium';
+    src: url('../../font/SVN-Poppins-Medium.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'SVN-Poppins-Mediumitalic';
+    src: url('../../font/SVN-Poppins-MediumItalic.otf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+main{
+    padding: 0 8%;
+}
+
+.blank{
+    height: 105px;
+}
+
+.photographer-card{
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cover{
+    height: 25vw;
+    overflow: hidden;
+}
+
+.cover img {
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+}
+
+.info {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    background: #f8f9fa;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -50px;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+}
+
+h3{
+    font-family: 'SVN-Poppins-Regular';
+    font-size: 20px;
+}
+
+h4{
+    font-family: 'SVN-Poppins-Light';
+    font-size: 14px;
+    color: #6B8E40;
+    margin-bottom: 10px;
+}
+
+.rate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.rate i{
+    font-size: 18px;
+}
+
+.rate h5{
+    font-size: 14px;
+    margin: 0;
+}
+
+.locations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.locations button {
+    font-family: 'SVN-Poppins-Light';
+    font-size: 14px;
+    border: 1px solid #96A856;
+    padding: 0 7px;
+    border-radius: 4px;
+    background-color: #FFEAC4;
+}
+
+@media (max-width: 1480px){
+    .blank{
+        height: 95px;
+    }
+    main{
+        padding: 0 2.5%;
+    }
+}
+
+@media (max-width: 1300px){
+    .blank{
+        height: 80px;
+    }
+}

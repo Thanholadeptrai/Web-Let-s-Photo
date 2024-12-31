@@ -253,7 +253,7 @@ class HeaderComponent extends HTMLElement {
                     <div class="modeicon">
                         <i class="fa-solid fa-moon custom-icon switch" style="color: #000000;"></i>
                     </div>
-                    <a href='#' class="signinbtn">Đăng Nhập/Đăng Ký</a>
+                    <a href='../../page/login/login.html' class="signinbtn">Đăng Nhập/Đăng Ký</a>
                 </div>
                 <div class="bx bx-menu" id="menu-icon"></div>
                 <a href="#" id="scroll-up">
