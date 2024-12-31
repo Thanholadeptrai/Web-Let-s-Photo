@@ -302,6 +302,10 @@ a{
 .money :last-child {
     margin-right: 0;
 }
+#wrapper {
+    display: flex;
+    justify-content: center;
+}
 .wrapper {
     width: 700px;
     border-radius: 45px;
