@@ -54,6 +54,8 @@
 
 main{
     padding: 0 8%;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .blank{
@@ -88,7 +90,7 @@ h1 {
 .welcome img{
     margin-left: 20px;
     width: 300px;
-    height: auto;
+    height: 75px;
 }
 .choose{
     margin-top: 50px;
