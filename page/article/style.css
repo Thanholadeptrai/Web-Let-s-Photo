@@ -99,6 +99,10 @@ main{
     width: 100%;
 }
 
+p{
+    color: #555;
+}
+
 h1{
     font-family: 'SVN-Poppins-Medium';
     font-size: 22px;
@@ -209,7 +213,7 @@ h1{
 }
 
 .box1 h3{
-    font-family: 'SVN-Poppins-Medium';
+    font-family: 'SVN-Poppins-Regular';
     font-size: 12px;
     color: #96A856;
 }
@@ -294,7 +298,6 @@ h1{
         font-size: 14px;
     }
     .box1 h3{
-        font-family: "SVN-Poppins-Regular";
         font-size: 10px;
     }
 }

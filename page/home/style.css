@@ -292,7 +292,7 @@ h1{
     margin-right: 5px;
 }
 
-.box1 .text :hover{
+.box1 .text h3:hover{
     text-decoration: underline;
 }
 
