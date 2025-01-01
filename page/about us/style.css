@@ -60,6 +60,121 @@ main{
     height: 105px;
 }
 
+.gioithieu{
+    position: relative;
+    display: flex;
+    margin-top: 20vh;
+}
+
+.anhminhhoa{
+    position: absolute;
+    z-index: -1;
+}
+
+.anhminhhoa img{
+    width: 35vw;
+    left: 0;
+}
+
+.letphoto{
+    position: absolute;
+    width: 20vw;
+    left: 49vw;
+    top: 6vh;
+}
+
+.contentgt{
+    position: relative;
+    z-index: 1;
+}
+
+.noidunggt{
+    display: flex;
+    flex-direction: column;
+    padding: 7vh 0;
+    background-color: #ffeac464;
+    border-radius: 15px;
+    margin-left: 32vw;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px;
+}
+
+.tieudegt{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40vw;
+}
+
+h1{
+    color: #96A856 !important;
+    font-family: 'SVN-Poppins-Regular';
+    font-size: 38px !important;
+    margin-bottom: 50px !important;
+}
+
+.tieudegt h2{
+    color: #96A856 !important;
+    font-family: 'SVN-Poppins-Italic';
+    font-size: 50px !important;
+    margin-top: 0 !important;
+}
+
+.noidunggt p, .noidunggt a{
+    margin-left: 8vw;
+}
+
+.noidunggt p{
+    padding-top: 35px;
+    padding-bottom: 10px;
+    margin-right: 4vw;
+}
+
+.noidunggt a {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background: linear-gradient(to right, #6B8E40, #A5BC73);
+    color: white;
+    width: 218px;
+    height: 42px;
+    border-radius: 10px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SVN-Poppins-Regular';
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.noidunggt a:hover{
+    background: linear-gradient(to right, #A5BC73 , #6B8E40);
+    box-shadow: rgba(0, 0, 0, 0.589) 0px 2px 4px;
+    transform: translateX(8px);
+}
+
+.page2 {
+    justify-content: center;
+    text-align: center;
+    
+}
+.page2 img{
+    background-size: cover;
+    width: 300px;
+    height: 75px;
+}
+.image{
+    text-align: center;
+    margin-top: 50px;
+}
+.line2 {
+    font-family: 'SVN-Poppins-Italic';
+    color: #96A856;
+}
+.line2 h1{
+    font-size: 50px !important;
+}
+.slogan{
+    margin-top: 100px;
+}
+
 @media (max-width: 1480px){
     .blank{
         height: 95px;
