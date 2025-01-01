@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SVN-Poppins-Light';
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+@font-face{
+    font-family: 'SVN-Beast';
+    src: url('../../font/SVN-Beast.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'SVN-Poppins-Regular';
+    src: url('../../font/SVN-Poppins-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'SVN-Poppins-Italic';
+    src: url('../../font/SVN-Poppins-Italic.otf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'SVN-Poppins-Light';
+    src: url('../../font/SVN-Poppins-Light.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'SVN-Poppins-Medium';
+    src: url('../../font/SVN-Poppins-Medium.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'SVN-Poppins-Mediumitalic';
+    src: url('../../font/SVN-Poppins-MediumItalic.otf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+main{
+    padding: 0 8%;
+}
+
+.blank{
+    height: 105px;
+}
+
+@media (max-width: 1480px){
+    .blank{
+        height: 95px;
+    }
+    main{
+        padding: 0 2.5%;
+    }
+}
+
+@media (max-width: 1300px){
+    .blank{
+        height: 80px;
+    }
+}
+
+.nut{
+    display: flex;
+    justify-content: center;
+    
+}
+.button1 {
+    gap: 100px;
+    justify-content: space-between;
+}
+button {
+    width: auto;
+    background: linear-gradient(90deg,#6B8E40,#A5BC73);
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin: 50px;
+    margin-top: 50px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+button:hover{
+    color: #ffffff;
+    background: linear-gradient(90deg,#829D62,#C5CEB0);
+    border-color: #ffffff;
+}
