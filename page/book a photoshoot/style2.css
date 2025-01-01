@@ -170,7 +170,6 @@ a{
   }
   .head2 {
     font-size: 35px;
-    margin-top: 20px;
   }
   .under {
     margin-bottom: 10px;
@@ -178,10 +177,11 @@ a{
     text-align: start;
     align-items: flex-end;
   }
+  
   .theloai span {
     
     width: 350px;
-    height: 500px;
+    height: 450px;
     padding: 10px 20px;
     background-color: #96A856;
     border-radius: 10px;
@@ -213,6 +213,7 @@ a{
 .form-row {
     
     display: flex;
+
     gap: 50px;
 }
 .form-group input:focus {
@@ -277,4 +278,7 @@ button:hover{
 .text {
     margin-top: 20px;
     margin-bottom: 10px;
+}
+.linetwo {
+    margin-top: 21px;
 }
