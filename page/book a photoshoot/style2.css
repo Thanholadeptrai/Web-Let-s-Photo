@@ -282,3 +282,6 @@ button:hover{
 .linetwo {
     margin-top: 21px;
 }
+a{
+    text-decoration: none;
+}
