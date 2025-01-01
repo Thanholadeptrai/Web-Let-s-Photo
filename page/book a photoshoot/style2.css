@@ -166,9 +166,11 @@ a{
   .head1 {
     font-family: 'SVN-Poppins-Italic';
     font-size: 14px;
+    margin-top: 10px;
   }
   .head2 {
     font-size: 35px;
+    margin-top: 20px;
   }
   .under {
     margin-bottom: 10px;
@@ -184,6 +186,9 @@ a{
     background-color: #96A856;
     border-radius: 10px;
     transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .theloai input[type="radio"]:checked + span {
