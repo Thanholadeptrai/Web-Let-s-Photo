@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="PPH.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- Import component -->
+    <script src="../../../component/navbar/navbar_photographer.js" defer></script>
+    <script src="../../../component/navbar/main.js" defer></script>
+    <script src="../../../component/footer/footer.js" defer></script>
+    <!-- Js chính -->
+    <script src="tab.js" defer></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+</head>
+<body>
+    <header-component-photo></header-component-photo>
+    <!-- khoảng trống để tránh bị navbar che -->
+    <div class="blank"></div>
+    <main>
+        <div class="photographer-card">
+            <div class="cover">
+                <img src="../../../photo/Top Photographer/PhamPhucHiep/PPHcover.jpg" alt="Cover Photo">
+            </div>
+            <div class="info">
+                <img src="../../../photo/Top Photographer/PhamPhucHiep/PPHavt.png" alt="Avatar" class="avatar">
+                <h3>Phạm Phúc Hiệp</h3>
+                <div class="rate">
+                    <i class="fa-solid fa-star" style="color: #ff8c5b;"></i>
+                    <h5>4.8 (38)</h5>
+                </div>
+                <h4>Trên 5 năm kinh nghiệm</h4>
+                <div class="locations">
+                    <button>Hà Nội</button>
+                    <button>Thái Nguyên</button>
+                </div>
+                <div class="gioithieubox">
+                    <div class="gioithieu">
+                        <h4>Thiết bị</h4>
+                        <p>Máy ảnh Canon EOS R5, Ống kính 24-70mm f/2.8L II USM</p>
+                        <h4>Giới thiệu</h4>
+                        <p class="ndgioithieu">Chào bạn, mình là Phạm Phúc Hiệp. Mình rất thích chụp ảnh và luôn sẵn sàng ghi lại những khoảnh khắc đẹp nhất của bạn. Cảm ơn bạn đã tin tưởng và ủng hộ mình. Hãy cùng nhau tạo nên những bức ảnh thật tuyệt vời nhé!</p>
+                    </div>
+                    <a href='../../login/login.html' class="datlich">Đặt Lịch</a>
+                </div>
+            </div>
+            <div class="noidung">
+                <div class="tabs">
+                    <div class="tab active" onclick="showContent('photo')">
+                        <i class="fa-regular fa-image"></i>
+                        <p>Ảnh đã chụp</p>
+                    </div>
+                    <div class="tab" onclick="showContent('rate')">
+                        <i class="fa-solid fa-star"></i>
+                        <p>Đánh giá</p>
+                    </div>
+                </div>
+                <div id="photo" class="content active">
+                    <div class="item">
+                        <img src="../../../photo/Photographer/PhamPhucHiep/PPH1.jpg" alt="Photo">
+                    </div>
+                    <div class="item">
+                        <img src="../../../photo/Photographer/PhamPhucHiep/PPH2.jpg" alt="Photo">
+                    </div>
+                    <div class="item">
+                        <img src="../../../photo/Photographer/PhamPhucHiep/PPH3.jpg" alt="Photo">
+                    </div>
+                    <div class="item">
+                        <img src="../../../photo/Photographer/PhamPhucHiep/PPH4.jpg" alt="Photo">
+                    </div>
+                    <div class="item">
+                        <img src="../../../photo/Photographer/PhamPhucHiep/PPH5.jpg" alt="Photo">
+                    </div>
+                    <div class="item">
+                        <img src="../../../photo/Photographer/PhamPhucHiep/PPH6.jpg" alt="Photo">
+                    </div>
+                    <div class="item">
+                        <img src="../../../photo/Photographer/PhamPhucHiep/PPH7.jpg" alt="Photo">
+                    </div>
+                    <div class="item">
+                        <img src="../../../photo/Photographer/PhamPhucHiep/PPH8.jpg" alt="Photo">
+                    </div>
+                    <div class="item">
+                        <img src="../../../photo/Photographer/PhamPhucHiep/PPH9.jpg" alt="Photo">
+                    </div>
+                    <div class="item">
+                        <img src="../../../photo/Photographer/PhamPhucHiep/PPH10.jpg" alt="Photo">
+                    </div>
+                </div>
+                <div id="rate" class="content">
+                    <div class="rateitem">
+                        <img src="../../../photo/KhachHang/KH1.jpg" alt="user-avatar" class="user-avatar">
+                        <div class="user">
+                            <h4>Nguyễn Khánh Linh</h4>
+                            <div class="user-rate">
+                                <i class="fa-solid fa-star" style="color: #ff8c5b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ff8c5b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ff8c5b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ff8c5b;"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>Thể loại: Cặp đôi</p>
+                            <p>Đánh giá: Anh Hiệp chụp ảnh rất đẹp và chuyên nghiệp. Chúng tôi rất hài lòng với dịch vụ của anh.</p>
+                            <h6>10.06.2024</h6>
+                        </div>
+                    </div>
+                    <div class="rateitem">
+                        <img src="../../../photo/KhachHang/KH2.jpg" alt="user-avatar" class="user-avatar">
+                        <div class="user">
+                            <h4>Trần Thanh Trà</h4>
+                            <div class="user-rate">
+                                <i class="fa-solid fa-star" style="color: #ff8c5b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ff8c5b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ff8c5b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ff8c5b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ff8c5b;"></i>
+                            </div>
+                            <p>Thể loại: Gia đình</p>
+                            <p>Đánh giá: Chúng tôi đã có một buổi chụp ảnh gia đình tuyệt vời. Cảm ơn anh Hiệp rất nhiều!</p>
+                            <h6>15.09.2023</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- khoảng trống để tránh bị navbar che -->
+    <div class="blank"></div>
+    <footer-component></footer-component>
+</body>
+</html>
