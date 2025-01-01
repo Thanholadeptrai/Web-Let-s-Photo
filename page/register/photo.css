@@ -166,9 +166,13 @@ form {
     text-decoration: none;
 }
 
-button {
+.button{
+    font-family: 'SVN-Poppins-Light';
+    display: flex;
+}
+
+.button a{
     width: 200px;
-    background: linear-gradient(90deg,#6B8E40,#A5BC73);
     color: #ffffff;
     font-weight: 500;
     border: none;
@@ -180,18 +184,20 @@ button {
     margin: 10px;
     margin-top: 20px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
-button:hover{
+
+.button2{
+    background: linear-gradient(90deg,#6B8E40,#A5BC73);
+}
+.button2:hover{
     color: #ffffff;
     background: linear-gradient(90deg,#829D62,#C5CEB0);
     border-color: #ffffff;
 }
 
-.button{
-    color: #68982D;
-    font-family: 'SVN-Poppins-Light';
-    display: flex;
-}
 .button1 {
     background: linear-gradient(90deg,#A19F9F,#F4F4F4);
     color: #000;

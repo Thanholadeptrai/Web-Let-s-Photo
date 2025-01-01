@@ -95,12 +95,12 @@ h2{
 .wrapper a:hover{
     text-decoration: none;
 }
- .Choose{
+.Choose{
     display: flex;
     justify-content: space-evenly;
 
 }
-button {
+.Choose a {
     width: 220px;
     height: 180px;
     background-color: #68982D;
@@ -115,8 +115,11 @@ button {
     margin: 16px;
     margin-top: 50px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-button:hover{
+.Choose a:hover{
     color: #ffffff;
     background: linear-gradient(90deg,#829D62,#C5CEB0);
     border-color: #ffffff;
