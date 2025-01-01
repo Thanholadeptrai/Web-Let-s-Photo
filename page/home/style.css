@@ -292,6 +292,10 @@ h1{
     margin-right: 5px;
 }
 
+.box1 .text :hover{
+    text-decoration: underline;
+}
+
 .chuyenmuc2 .xemthem{
     display: flex;
     justify-content: center;
