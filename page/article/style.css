@@ -86,7 +86,7 @@ main{
     padding: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     width: 20vw;
-    height: 53vh;
+    height: 55vh;
     position: fixed;
     right: 15vw;
 }
@@ -225,12 +225,125 @@ h1{
         height: 95px;
     }
     main{
-        padding: 0 2.5%;
+        padding: 0 10%;
+    }
+    .baivietkhac{
+        width: 22vw;
+        height: 53vh;
+        right: 10vw;
+    }
+    .box1{
+        gap: 1rem; 
+        margin-top: 20px;
+    }
+    .item img{
+        height: 65px;
+        margin-right: 10px;
     }
 }
 
 @media (max-width: 1300px){
     .blank{
         height: 80px;
+    }
+}
+
+@media (max-width: 1230px){
+    main{
+        padding: 0 5%;
+    }
+    .blank{
+        height: 80px;
+    }
+    .baivietkhac{
+        width: 23vw;
+        height: 53vh;
+        right: 5vw;
+    }
+    .box1{
+        gap: 1rem; 
+        margin-top: 20px;
+    }
+    .item img{
+        height: 60px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1230px){
+    main{
+        padding: 0 5%;
+    }
+    .blank{
+        height: 80px;
+    }
+    .baivietkhac{
+        width: 23vw;
+        height: 53vh;
+        right: 5vw;
+    }
+    .box1{
+        gap: 1rem; 
+        margin-top: 20px;
+    }
+    .item img{
+        height: 55px;
+        margin-right: 8px;
+    }
+    .baivietkhac h2{
+        font-size: 14px;
+    }
+    .box1 h3{
+        font-family: "SVN-Poppins-Regular";
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 850px){
+    main{
+        padding: 0 2.5%;
+        display: flex;
+        flex-direction: column;
+    }
+    .baiviet{
+        width: 100%;
+        margin-right: 15px;
+    }
+    .baivietkhac{
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: 1rem;
+        right: 0;
+    }
+    .item img{
+        height: 70px;
+        margin-right: 8px;
+    }
+    .box1{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    .text{
+        width: 90%;
+    }    
+}
+
+@media (max-width: 700px){
+    .box1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px){
+    .box1{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .baiviet h1{
+        font-size: 18px;
+    }
+    .baiviet h3, .baiviet p{
+        font-size: 14px;
     }
 }
