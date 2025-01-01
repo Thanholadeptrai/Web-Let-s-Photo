@@ -60,6 +60,93 @@ main{
     height: 105px;
 }
 
+.tieude{
+    text-align: center;
+}
+
+h1{
+    color: #96A856 !important;
+    font-family: 'SVN-Poppins-Mediumitalic';
+    font-size: 38px !important;
+    margin-bottom: 0 !important;
+}
+
+.box1{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    align-items: left;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 3rem; 
+    margin-top: 30px;
+}
+
+.box1 a{
+    text-decoration: none;
+}
+
+.item img{
+    display: grid;
+    height: auto;
+    width: 100%;
+}
+
+.info{
+    display: flex;
+    margin-top: 10%;
+}
+
+.text{
+    width: 90%;
+}
+
+h3{
+    font-family: 'SVN-Poppins-Medium';
+    font-size: 16px;
+    color: #96A856;
+    margin-bottom: 2px;
+}
+
+h4{
+    font-family: 'SVN-Poppins-Light';
+    font-size: 12px !important;
+    margin-top: 0;
+}
+
+.arrow{
+    display: flex;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+}
+
+.xemthem{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.xemthem a{
+    display: flex;
+    background: linear-gradient(to right, #6B8E40, #A5BC73);
+    color: white;
+    width: 250px;
+    height: 42px;
+    border-radius: 10px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SVN-Poppins-Regular';
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.xemthem a:hover{
+    background: linear-gradient(to right, #A5BC73 , #6B8E40);
+    box-shadow: rgba(0, 0, 0, 0.589) 0px 2px 4px;
+    transform: translateX(8px);
+}
+
 @media (max-width: 1480px){
     .blank{
         height: 95px;

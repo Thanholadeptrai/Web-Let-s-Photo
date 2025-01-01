@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SVN-Poppins-Light';
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+@font-face{
+    font-family: 'SVN-Beast';
+    src: url('../../font/SVN-Beast.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'SVN-Poppins-Regular';
+    src: url('../../font/SVN-Poppins-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'SVN-Poppins-Italic';
+    src: url('../../font/SVN-Poppins-Italic.otf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'SVN-Poppins-Light';
+    src: url('../../font/SVN-Poppins-Light.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'SVN-Poppins-LightItalic';
+    src: url('../../font/SVN-Poppins-LightItalic.otf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'SVN-Poppins-Medium';
+    src: url('../../font/SVN-Poppins-Medium.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'SVN-Poppins-Mediumitalic';
+    src: url('../../font/SVN-Poppins-MediumItalic.otf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+main{
+    display: flex;
+    padding: 0 15%;
+    font-family: 'SVN-Poppins-Light';
+    justify-content: space-between;
+}
+
+.blank{
+    height: 105px;
+}
+
+.baiviet{
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    margin-right: 15px;
+    color: #555;
+}
+
+.baivietkhac{
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 20vw;
+    height: 53vh;
+    position: fixed;
+    right: 15vw;
+}
+
+.cover{
+    width: 100%;
+}
+
+.cover img{
+    width: 100%;
+}
+
+h1{
+    font-family: 'SVN-Poppins-Medium';
+    font-size: 22px;
+    color: #96A856;
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    margin: 15px 0;
+}
+
+.content img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px auto;
+    display: block;
+}
+
+.content p {
+    font-size: 16px;
+}
+
+.info h2, .info h3{
+    font-family: 'SVN-Poppins-lightItalic';
+    font-size: 14px;
+}
+
+.start{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.end{
+    margin-bottom: 30px;
+}
+
+.react{
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+
+.action-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #666;
+}
+
+.action-btn:hover {
+    color: #000;
+}
+
+.baivietkhac h2{
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+}
+
+.baivietkhac h2:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -7px; /* Điều chỉnh khoảng cách của đường thẳng */
+    border-bottom: 3px solid #96A856; /* Điều chỉnh độ dày và màu sắc của đường thẳng */
+}
+
+.box1{
+    height: 100%;
+    width: 100%;
+    align-items: left;
+    gap: 1.5rem; 
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box1 a{
+    text-decoration: none;
+}
+
+.box1 a:hover{
+    text-decoration: underline;
+}
+
+.item{
+    display: flex;
+}
+
+.item img{
+    height: 80px;
+    margin-right: 10px;
+}
+
+.text{
+    width: 85%;
+}
+
+.box1 h3{
+    font-family: 'SVN-Poppins-Medium';
+    font-size: 12px;
+    color: #96A856;
+}
+
+.box1 h4{
+    font-family: 'SVN-Poppins-Light';
+    font-size: 10px !important;
+    margin-top: 0;
+}
+
+@media (max-width: 1480px){
+    .blank{
+        height: 95px;
+    }
+    main{
+        padding: 0 2.5%;
+    }
+}
+
+@media (max-width: 1300px){
+    .blank{
+        height: 80px;
+    }
+}
