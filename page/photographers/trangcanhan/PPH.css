@@ -98,6 +98,10 @@ main{
     background: #f8f9fa;
 }
 
+.ndgioithieu{
+    margin: 0 10vw;
+}
+
 h3{
     font-family: 'SVN-Poppins-Regular';
     font-size: 20px;
@@ -265,7 +269,7 @@ h4{
 
 .rateitem{
     display: flex;
-    margin: 30px 0;
+    margin: 30px;
 }
 
 .user h4{
@@ -294,12 +298,18 @@ h4{
     .blank{
         height: 80px;
     }
+    .ndgioithieu{
+        margin: 0 5vw;
+    }
 }
 
 @media (max-width: 1060px){
     .item {
         width: 29%;
         margin: 10px;
+    }
+    .ndgioithieu{
+        margin: 0;
     }
 }
 
