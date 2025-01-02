@@ -106,6 +106,10 @@ h1 {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.37);
     transition: all 0.3s ease;
 }
+
+.comment h1, .theloai h1, .concept h1{
+    margin-top: 20vh;
+}
 .nut{
     display: flex;
     justify-content: center;
@@ -114,8 +118,9 @@ h1 {
 .button1 {
     gap: 100px;
     justify-content: space-between;
+    margin-top: 70px;
 }
-button {
+.button1 a{
     width: auto;
     background: linear-gradient(90deg,#6B8E40,#A5BC73);
     color: #ffffff;
@@ -130,7 +135,7 @@ button {
     margin-top: 50px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-button:hover{
+.button1 a:hover{
     color: #ffffff;
     background: linear-gradient(90deg,#829D62,#C5CEB0);
     border-color: #ffffff;
