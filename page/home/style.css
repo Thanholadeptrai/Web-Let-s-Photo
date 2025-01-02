@@ -322,6 +322,24 @@ h1{
     transform: translateX(8px);
 }
 
+.image {
+    flex: 0 0 40%;
+    max-width: 500px;
+    height: auto;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.item:hover .image img {
+    transform: scale(1.1);
+}
+
 /* đăng ký nhận tin */
 .chuyenmuc3{
     margin-top: 20vh;
